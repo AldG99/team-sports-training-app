@@ -35,3 +35,12 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# service
+**/src/services
+
+# firebase
+firebase.json
+
+# metro.config.js
+metro.config.js
