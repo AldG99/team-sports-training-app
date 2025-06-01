@@ -39,8 +39,11 @@ yarn-error.*
 # service
 **/src/services
 
-# firebase
-firebase.json
+# types
+**/src/types
 
-# metro.config.js
-metro.config.js
+# supabase
+supabase
+
+# docs
+docs
