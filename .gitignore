@@ -42,8 +42,11 @@ yarn-error.*
 # types
 **/src/types
 
+# database
+database
+
 # supabase
-supabase
+supabase.js
 
 # docs
 docs
