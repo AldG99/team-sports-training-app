@@ -1,3 +1,25 @@
+/**
+ * ========================================
+ * 🛠️ HELPERS - UTILIDADES UNIVERSALES
+ * ========================================
+ * 
+ * Funciones de ayuda universales para SportCampus
+ * 
+ * Módulos incluidos:
+ * 📅 Formateo de Fechas - formatDate, formatDateTime, formatTimeAgo, isToday, isTomorrow
+ * 📝 Manipulación de Texto - capitalize, truncateText, slugify, removeAccents
+ * 🔢 Formateo de Números - formatNumber, formatCurrency, formatPercentage
+ * 🏃‍♂️ Helpers Deportivos - getSportName, getSportIcon, calculateStats, calculateAverage
+ * 📊 Manipulación de Arrays - groupBy, sortBy, filterBy, removeDuplicates
+ * 🎨 Utilidades de UI - hexToRgba, getContrastColor, generateTabConfig
+ * 📁 Gestión de Archivos - formatFileSize, isValidImageFormat, generateFileName
+ * ⚡ Rendimiento - debounce, throttle, measurePerformance
+ * 🐛 Desarrollo - logError, logInfo
+ * 
+ * Todos los helpers están optimizados para el contexto universitario
+ * y deportivo de SportCampus con soporte completo en español.
+ */
+
 import { SPORTS, USER_TYPES, TOURNAMENT_STATUS } from './constants';
 
 // ==================== FORMATEO DE FECHAS ====================
