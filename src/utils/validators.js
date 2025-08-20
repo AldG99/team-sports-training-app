@@ -1,8 +1,37 @@
-// Utilidades de validación para SportCampus
+/**
+ * ========================================
+ * ✅ VALIDATORS - SISTEMA DE VALIDACIÓN INTEGRAL
+ * ========================================
+ * 
+ * Sistema de validación completo para SportCampus
+ * 
+ * Módulos de validación incluidos:
+ * 📧 Email - Formato RFC + dominios universitarios específicos
+ * 🔐 Contraseñas - Fuerza, requisitos y confirmación
+ * 👤 Datos Personales - Nombres, IDs, teléfonos, edades, facultades
+ * 🏃‍♂️ Deportes - Validación por deporte, posiciones, estadísticas
+ * 📁 Archivos - Tipos de imagen, tamaños, dimensiones
+ * 🏆 Torneos - Nombres, fechas, equipos
+ * 🧹 Sanitización - Limpieza automática de inputs
+ * 🔧 Formularios - Validador general con reglas personalizables
+ * 
+ * Características especiales:
+ * ✅ Validaciones específicas para contexto universitario mexicano
+ * ✅ Mensajes de error contextualizados en español
+ * ✅ Sanitización automática de datos de entrada
+ * ✅ Validaciones deportivas por deporte específico
+ * ✅ Sistema de fuerza de contraseñas con scoring
+ * ✅ Validador general para formularios complejos
+ * 
+ * Todos los validadores incluyen fallbacks y manejo de errores robusto.
+ */
+
 import { USER_TYPES, SPORTS } from './constants';
 
 /**
- * Validaciones de correo electrónico
+ * ========================================
+ * 📧 VALIDACIONES DE CORREO ELECTRÓNICO
+ * ========================================
  */
 export const emailValidators = {
   // Validación básica de formato de email
@@ -72,7 +101,9 @@ export const emailValidators = {
 };
 
 /**
- * Validaciones de contraseña
+ * ========================================
+ * 🔐 VALIDACIONES DE CONTRASEÑA
+ * ========================================
  */
 export const passwordValidators = {
   // Longitud mínima
@@ -174,7 +205,9 @@ export const passwordValidators = {
 };
 
 /**
- * Validaciones de datos personales
+ * ========================================
+ * 👤 VALIDACIONES DE DATOS PERSONALES
+ * ========================================
  */
 export const personalValidators = {
   // Validar nombre
@@ -245,7 +278,9 @@ export const personalValidators = {
 };
 
 /**
- * Validaciones específicas de deportes
+ * ========================================
+ * 🏃‍♂️ VALIDACIONES ESPECÍFICAS DE DEPORTES
+ * ========================================
  */
 export const sportsValidators = {
   // Validar deporte
@@ -337,7 +372,9 @@ export const sportsValidators = {
 };
 
 /**
- * Validaciones de archivos
+ * ========================================
+ * 📁 VALIDACIONES DE ARCHIVOS
+ * ========================================
  */
 export const fileValidators = {
   // Validar tipo de imagen
@@ -374,7 +411,9 @@ export const fileValidators = {
 };
 
 /**
- * Validaciones de torneo
+ * ========================================
+ * 🏆 VALIDACIONES DE TORNEO
+ * ========================================
  */
 export const tournamentValidators = {
   // Validar nombre de torneo
@@ -408,7 +447,9 @@ export const tournamentValidators = {
 };
 
 /**
- * Validador general que combina todas las validaciones
+ * ========================================
+ * 🔧 VALIDADOR GENERAL DE FORMULARIOS
+ * ========================================
  */
 export const validateForm = (formData, validationRules) => {
   const errors = {};
@@ -439,7 +480,9 @@ export const validateForm = (formData, validationRules) => {
 };
 
 /**
- * Validaciones comunes predefinidas
+ * ========================================
+ * 📋 REGLAS DE VALIDACIÓN PREDEFINIDAS
+ * ========================================
  */
 export const commonValidationRules = {
   email: [
@@ -491,7 +534,9 @@ export const commonValidationRules = {
 };
 
 /**
- * Utilidad para sanitizar datos de entrada
+ * ========================================
+ * 🧹 SANITIZACIÓN DE DATOS DE ENTRADA
+ * ========================================
  */
 export const sanitizeInput = {
   // Limpiar string básico
