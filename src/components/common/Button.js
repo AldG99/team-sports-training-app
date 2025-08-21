@@ -1,3 +1,39 @@
+/**
+ * ========================================
+ * 🔘 COMPONENTE BUTTON - UNIVERSAL
+ * ========================================
+ * 
+ * Componente de botón totalmente responsivo y versátil para SportCampus
+ * 
+ * Características principales:
+ * ✅ Totalmente responsivo con breakpoints automáticos
+ * ✅ 6 variantes de estilo: primary, secondary, outline, ghost, danger, success
+ * ✅ 3 tamaños adaptativos: small, medium, large
+ * ✅ Estados avanzados: loading, disabled con indicadores visuales
+ * ✅ Soporte de iconos con Ionicons y tamaños responsivos
+ * ✅ Animaciones y sombras según tipo de botón
+ * 
+ * Props principales:
+ * @param {string} title - Texto del botón
+ * @param {function} onPress - Función a ejecutar al presionar
+ * @param {string} type - Tipo: 'primary'|'secondary'|'outline'|'ghost'|'danger'|'success'
+ * @param {string} size - Tamaño: 'small'|'medium'|'large'
+ * @param {boolean} disabled - Estado deshabilitado
+ * @param {boolean} loading - Estado de carga
+ * @param {string} icon - Nombre del icono de Ionicons
+ * @param {boolean} fullWidth - Ancho completo
+ * 
+ * Ejemplo de uso:
+ * <Button 
+ *   title="Iniciar Sesión" 
+ *   type="primary" 
+ *   size="large"
+ *   icon="log-in"
+ *   onPress={handleLogin}
+ *   loading={isLoading}
+ * />
+ */
+
 import React from 'react';
 import {
   TouchableOpacity,
