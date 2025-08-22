@@ -1,3 +1,38 @@
+/**
+ * ========================================
+ * 🗃️ COMPONENTE CARD - CONTENEDOR FLEXIBLE
+ * ========================================
+ * 
+ * Contenedor de tarjeta totalmente configurable para SportCampus
+ * 
+ * Características principales:
+ * ✅ 4 variantes de espaciado: compact, default, comfortable, spacious
+ * ✅ Sistema de elevación: low, medium, high, none
+ * ✅ Bordes configurables: small, medium, large, xlarge
+ * ✅ Interactividad opcional con TouchableOpacity
+ * ✅ Completamente personalizable con colores y bordes custom
+ * ✅ Responsivo con padding automático basado en pantalla
+ * 
+ * Props principales:
+ * @param {ReactNode} children - Contenido de la tarjeta
+ * @param {function} onPress - Función para hacer la tarjeta interactiva
+ * @param {string} variant - Espaciado: 'compact'|'default'|'comfortable'|'spacious'
+ * @param {string} elevationLevel - Elevación: 'low'|'medium'|'high'|'none'
+ * @param {string} borderRadius - Radio: 'small'|'medium'|'large'|'xlarge'
+ * @param {boolean} fullWidth - Ancho completo sin márgenes laterales
+ * @param {string} backgroundColor - Color de fondo personalizado
+ * @param {string} borderColor - Color de borde personalizado
+ * 
+ * Ejemplo de uso:
+ * <Card 
+ *   variant="comfortable" 
+ *   elevationLevel="medium"
+ *   onPress={handleCardPress}
+ * >
+ *   <Text>Contenido de la tarjeta</Text>
+ * </Card>
+ */
+
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
 import { COLORS } from '../../utils/constants';
