@@ -1,3 +1,42 @@
+/**
+ * ========================================
+ * 📱 COMPONENTE HEADER - NAVEGACIÓN AVANZADA
+ * ========================================
+ * 
+ * Cabecera de navegación universal con Safe Area para SportCampus
+ * 
+ * Características principales:
+ * ✅ Safe Area compatible con insets automáticos
+ * ✅ 3 variantes de tamaño: compact, default, prominent
+ * ✅ StatusBar integrado con estilos configurables
+ * ✅ Navegación completa: botón atrás, iconos personalizados
+ * ✅ Soporte de subtítulos y alineación flexible
+ * ✅ Transparencia opcional para overlays
+ * ✅ Responsivo con tamaños automáticos
+ * 
+ * Props principales:
+ * @param {string} title - Título principal del header
+ * @param {string} subtitle - Subtítulo opcional
+ * @param {boolean} showBackButton - Mostrar botón de regreso
+ * @param {function} onBackPress - Función para botón de regreso
+ * @param {string} rightIcon - Icono derecho (Ionicons)
+ * @param {function} onRightPress - Función para icono derecho
+ * @param {string} variant - Tamaño: 'compact'|'default'|'prominent'
+ * @param {boolean} transparent - Header transparente
+ * @param {boolean} centerTitle - Centrar título
+ * @param {string} statusBarStyle - Estilo StatusBar
+ * 
+ * Ejemplo de uso:
+ * <Header 
+ *   title="Mi Equipo"
+ *   subtitle="FC Barcelona"
+ *   showBackButton={true}
+ *   onBackPress={navigation.goBack}
+ *   rightIcon="settings"
+ *   variant="prominent"
+ * />
+ */
+
 import React from 'react';
 import {
   View,
