@@ -1,3 +1,46 @@
+/**
+ * ========================================
+ * 📝 COMPONENTE INPUT - CAMPO AVANZADO
+ * ========================================
+ * 
+ * Campo de entrada avanzado con validación visual para SportCampus
+ * 
+ * Características principales:
+ * ✅ Floating labels animados con Animated API
+ * ✅ Validación visual en tiempo real con estados de error
+ * ✅ Soporte completo de iconos izquierda/derecha
+ * ✅ Manejo de contraseñas con toggle de visibilidad
+ * ✅ Contador de caracteres y texto de ayuda
+ * ✅ Multiline y responsive según variante
+ * ✅ Animaciones fluidas y estados focus
+ * 
+ * Props principales:
+ * @param {string} label - Etiqueta del campo
+ * @param {string} value - Valor actual del input
+ * @param {function} onChangeText - Función de cambio de texto
+ * @param {string} placeholder - Texto placeholder
+ * @param {string} error - Mensaje de error
+ * @param {string} variant - Espaciado: 'compact'|'default'|'comfortable'
+ * @param {boolean} floatingLabel - Activar label flotante animado
+ * @param {boolean} secureTextEntry - Campo de contraseña
+ * @param {string} leftIcon - Icono izquierdo (Ionicons)
+ * @param {string} rightIcon - Icono derecho (Ionicons)
+ * @param {boolean} multiline - Campo de múltiples líneas
+ * @param {number} maxLength - Longitud máxima
+ * @param {boolean} showCharacterCount - Mostrar contador de caracteres
+ * 
+ * Ejemplo de uso:
+ * <Input 
+ *   label="Correo Electrónico"
+ *   value={email}
+ *   onChangeText={setEmail}
+ *   leftIcon="mail"
+ *   floatingLabel={true}
+ *   error={emailError}
+ *   keyboardType="email-address"
+ * />
+ */
+
 import React, { useState } from 'react';
 import {
   View,
