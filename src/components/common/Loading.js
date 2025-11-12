@@ -1,3 +1,40 @@
+/**
+ * ========================================
+ * ⏳ COMPONENTE LOADING - INDICADOR VERSÁTIL
+ * ========================================
+ * 
+ * Indicador de carga versátil con múltiples variantes para SportCampus
+ * 
+ * Características principales:
+ * ✅ 4 variantes de presentación: default, minimal, card, inline
+ * ✅ 3 tipos de animación: fade, scale, bounce, none
+ * ✅ Overlay modal con opacidad configurable
+ * ✅ Tamaños responsivos automáticos por dispositivo
+ * ✅ Indicadores personalizados según contexto
+ * ✅ Animaciones fluidas con Animated API
+ * ✅ Texto personalizable y opcional
+ * 
+ * Props principales:
+ * @param {string} size - Tamaño: 'small'|'medium'|'large' o número
+ * @param {string} color - Color personalizado del indicador
+ * @param {string} text - Texto a mostrar
+ * @param {boolean} showText - Mostrar o ocultar texto
+ * @param {boolean} overlay - Activar overlay modal
+ * @param {string} variant - Tipo: 'default'|'minimal'|'card'|'inline'
+ * @param {string} animation - Animación: 'fade'|'scale'|'bounce'|'none'
+ * @param {number} overlayOpacity - Opacidad del overlay (0-1)
+ * @param {number} duration - Duración animación bounce
+ * 
+ * Ejemplo de uso:
+ * <Loading 
+ *   variant="card"
+ *   animation="scale"
+ *   text="Cargando torneos..."
+ *   overlay={true}
+ *   overlayOpacity={0.7}
+ * />
+ */
+
 import React, { useEffect, useRef } from 'react';
 import {
   View,
